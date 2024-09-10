@@ -1,5 +1,5 @@
 [package]
-name = "CaptureText"
+name = "capture_text"
 version = "0.1.0"
 edition = "2021"
 
@@ -17,7 +17,7 @@ summary = " A screen capture tool with OCR for extracting text from selected are
 url = "https://github.com/SanjayShetty01/CaptureText"
 
 assets = [
-    {source = "target/release/CaptureText", dest = "/usr/bin/CaptureText", mode = "755"}
+    {source = "target/release/capture_text", dest = "/usr/bin/capture_text", mode = "755"}
 ]
 
 [package.metadata.deb]
@@ -30,6 +30,6 @@ depends = "$auto"
 section = "utility"
 priority = "optional"
 assets = [
-    ["target/release/CaptureText", "usr/bin/CaptureText", "755"],
+    ["target/release/capture_text", "usr/bin/capture_text", "755"],
     ["README.md", "usr/share/doc/CaptureText/README", "644"],
 ]
