@@ -8,3 +8,28 @@ tempfile = "3.12.0"
 screenshot-rs = "=0.1.5"
 tesseract = "0.15.1"
 cli-clipboard = "0.4.0"
+
+[package.metadata.generate-rpm]
+name = "capture_text"
+version = "0.1.0"
+license = "MIT"
+summary = " A screen capture tool with OCR for extracting text from selected areas."
+url = "https://github.com/SanjayShetty01/CaptureText"
+
+assets = [
+    {source = "target/release/CaptureText", dest = "/usr/bin/CaptureText", mode = "755"}
+]
+
+[package.metadata.deb]
+maintainer = "Sanjaya J. Shetty <sanjayashetty01@gmail.com>"
+copyright = "2024, Sanjaya J. Shetty <sanjayashetty01@gmail.com>"
+license-file = ["LICENSE", "4"]
+extended-description = """\
+ A screen capture tool with OCR for extracting text from selected areas."""
+depends = "$auto"
+section = "utility"
+priority = "optional"
+assets = [
+    ["target/release/CaptureText", "usr/bin/CaptureText", "755"],
+    ["README.md", "usr/share/doc/cargo-deb/README", "644"],
+]
