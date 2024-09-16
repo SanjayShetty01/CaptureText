@@ -63,6 +63,12 @@ Ensure you have installed the necessary dependencies before running the script:
 - Tesseract OCR (for OCR functionality)
 - Leptonica (for image processing)
 
+- Screenshot tools required (at least one)
+    - spectacle (works with KDE Plasma, possibly LXQT)
+    - gnome-screenshot (works with GNOME, Unity, Budgie, Cinnamon, etc)
+    - scrot (works with anything with an X server, except WSL or Bash for Ubuntu for Windows)
+
+
 You can install them via your package manager:
 - **Ubuntu/Debian**:
     ```bash
