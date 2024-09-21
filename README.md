@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./assets/capture_text.jpg" alt="capture_text logo" width="200"/>
+</p>
+
 # capture_text
 
 **capture_text** is a Linux-only screen capture tool that uses OCR (Optical Character Recognition) to extract text from selected areas on the screen. It supports major Linux distributions and offers simple installation via `.deb` or `.rpm` packages.
